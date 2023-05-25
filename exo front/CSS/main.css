@@ -1,0 +1,90 @@
+/* main.css */
+
+/* Style pour la liste ordonnée */
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  ol li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  ol li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  ol li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style pour les div d'articles */
+  #article1,
+  #article2 {
+    display: inline-block;
+    width: 100%; /* Utilise 100% de la largeur disponible */
+    max-width: 200px; /* Limite la largeur maximale à 200px */
+    margin-bottom: 20px; /* Ajoute un espace entre les articles */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #article1 img,
+  #article2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  #article1 img:hover,
+  #article2 img:hover {
+    transform: scale(1.1);
+  }
+  
+  #article1 a,
+  #article2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Style pour le footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    /* Ajuste les styles pour les écrans jusqu'à 768px de largeur */
+    #article1,
+    #article2 {
+      max-width: 100%; /* Utilise 100% de la largeur disponible */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajuste les styles pour les écrans jusqu'à 480px de largeur */
+    #article1,
+    #article2 {
+      display: block; /* Affiche les articles en bloc pour occuper toute la largeur */
+      max-width: none; /* Supprime la limite de largeur maximale */
+      margin-bottom: 10px; /* Réduit l'espace entre les articles */
+    }
+  }
+  
